@@ -29,6 +29,7 @@
         </div>
 
 
+
         <div class="mt-6" x-data="{ open: false }">
 
             <!-- Button (blue), duh! -->
@@ -64,7 +65,20 @@
             </div>
         </div>
     </div>
-
+    <button wire:loading wire:target="searchName" disabled>
+        <svg class="animate-spin h-5 w-5 mr-3"
+             xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+             style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:">
+            <circle cx="12" cy="20" r="2"/>
+            <circle cx="12" cy="4" r="2"/>
+            <circle cx="6.343" cy="17.657" r="2"/>
+            <circle cx="17.657" cy="6.343" r="2"/>
+            <circle cx="4" cy="12" r="2.001"/>
+            <circle cx="20" cy="12" r="2"/>
+            <circle cx="6.343" cy="6.344" r="2"/>
+            <circle cx="17.657" cy="17.658" r="2"/>
+        </svg>
+    </button>
 
     <div class="-mx-4 sm:-mx-8 px-4 sm:px-8 pb-20 overflow-x-auto">
         <div class="inline-block min-w-full mt-3 border-2 border-gray-300 rounded-2xl">
@@ -122,13 +136,15 @@
                                 </x-slot>
 
                                 <x-slot name="content">
-                                    <button class="block w-full py-2 text-sm text-gray-800 hover:bg-gray-400">
+                                    <button
+                                        class="block w-full py-2 text-sm text-gray-800 hover:bg-gray-400">
                                         Ver más
                                     </button>
-                                    <button class="block w-full py-2 text-sm text-gray-800 hover:bg-gray-400">
+                                    <button
+                                        class="block w-full py-2 text-sm text-gray-800 hover:bg-gray-400">
                                         Actualizar
                                     </button>
-                                    <button  @click="$dispatch('delete')"
+                                    <button  wire:click="$emit('show')"
                                              class="block w-full py-2 text-sm text-gray-800 hover:bg-gray-400">
                                         Elimninar
                                     </button>
@@ -139,13 +155,30 @@
 
                         </td>
                     </tr>
+
+                    <x-jet-confirmation-modal wire:model="confirmingUserDeletion">
+                        <x-slot name="title">
+                            Delete Account
+                        </x-slot>
+
+                        <x-slot name="content">
+                            Are you sure you want to delete your account? Once your account is deleted, all of its resources and data will be permanently deleted.
+                        </x-slot>
+
+                        <x-slot name="footer">
+
+                        </x-slot>
+                    </x-jet-confirmation-modal>
                 @endforeach
+
                 </tbody>
             </table>
             <div class="p-5 col-span-1 sm:col-span-2 md:col-end-2 lg:col-span-3 xl:col-span-4">
                 {{ $clientes->links('pagination-links') }}
             </div>
 
+
         </div>
+
     </div>
 </div>

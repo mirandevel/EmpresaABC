@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="df27f59f-1721-4407-9067-da7b4e1d1bd3" name="Default Changelist" comment="" />
+    <list default="true" id="df27f59f-1721-4407-9067-da7b4e1d1bd3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/components/delete.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/loading.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/more.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pagination.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Clientes/Clientes.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Clientes/Clientes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/User/Delete.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Users.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Users.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/clientes/clientes.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/clientes/clientes.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/user/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/user/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/user/delete.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/users.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/users.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/vendor/jetstream/components/authentication-card.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendor/jetstream/components/authentication-card.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/vendor/jetstream/components/button.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendor/jetstream/components/button.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/vendor/jetstream/components/dropdown.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendor/jetstream/components/dropdown.blade.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,6 +34,9 @@
         <option value="composer.json" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -141,6 +161,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1mM5NLH0n5wacAl82hRrref8YWy" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -150,20 +171,23 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/vendor/jetstream/components" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/components" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\proyecto laravel\EmpresaABC\resources\views\components" />
+      <recent name="E:\proyecto laravel\EmpresaABC\resources\views" />
+      <recent name="E:\proyecto laravel\EmpresaABC\app\View\Components" />
       <recent name="E:\proyecto laravel\EmpresaABC\resources\views\vendor\jetstream\components" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\proyecto laravel\EmpresaABC\resources\views\component" />
       <recent name="E:\proyecto laravel\EmpresaABC\resources\views\layouts" />
       <recent name="E:\proyecto laravel\EmpresaABC\resources\views\livewire" />
       <recent name="E:\proyecto laravel\EmpresaABC\app\Http\Livewire" />
       <recent name="E:\proyecto laravel\EmpresaABC\resources\views\livewire\user" />
-      <recent name="E:\proyecto laravel\EmpresaABC\app\Http\Livewire\User" />
     </key>
   </component>
   <component name="RunManager" selected="npm.dev">
@@ -207,11 +231,38 @@
       <workItem from="1609786606384" duration="12693000" />
       <workItem from="1609801501432" duration="8692000" />
       <workItem from="1609935744427" duration="2911000" />
-      <workItem from="1609964858894" duration="5945000" />
+      <workItem from="1609964858894" duration="6189000" />
+      <workItem from="1609975221485" duration="15721000" />
+      <workItem from="1610023718062" duration="1692000" />
+      <workItem from="1610034118468" duration="1800000" />
+      <workItem from="1610048581589" duration="13180000" />
+      <workItem from="1610119665315" duration="5229000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/views/vendor/jetstream/components/dialog-modal.blade.php</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
