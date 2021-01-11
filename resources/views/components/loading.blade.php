@@ -1,4 +1,4 @@
-<button {{$attributes->wire('loading') }} {{$attributes->wire('target') }}disabled>
+<button {{$attributes->wire('loading') }} {{$attributes->wire('target') }} {{$attributes}} disabled>
     <svg class="animate-spin h-5 w-5 mr-3"
          xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
          style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:">

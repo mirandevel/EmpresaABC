@@ -17,6 +17,8 @@ class Users extends Component
 
     public $currentName;
     public $currentId;
+    public $currentUser;
+
     public $name;
     public $showDelete;
     public $showUpdate;
@@ -24,7 +26,8 @@ class Users extends Component
     protected $listeners = [
         'modalDelete' => 'modalDelete',
         'modalUpdate' => 'modalUpdate',
-        'modalMore' => 'modalMore'
+        'modalMore' => 'modalMore',
+        'habilitar' => 'habilitar'
     ];
     public function render()
     {
@@ -40,6 +43,9 @@ class Users extends Component
         if($propertyName=='showDelete'){
             $this->name='';
         }
+        if($propertyName=='searchName'){
+        $this->resetPage();
+        }
     }
     public function modalDelete(User $user){
         $this->currentId=$user->id;
@@ -49,10 +55,13 @@ class Users extends Component
     public function modalUpdate(User $user){
         $this->currentId=$user->id;
         $this->currentName=$user->name;
+        $this->currentUser=$user;
+        $this->showUpdate=true;
     }
     public function modalMore(User $user){
         $this->currentId=$user->id;
         $this->currentName=$user->name;
+        $this->currentUser=$user;
         $this->showMore=true;
 
     }
@@ -63,5 +72,12 @@ class Users extends Component
             $this->redirect(route('users'));
         }
     }
+    public function habilitar()
+    {
+        $this->currentUser->active=!$this->currentUser->active;
+        $this->currentUser->save();
+        $this->redirect(route('users'));
+    }
+
 
 }

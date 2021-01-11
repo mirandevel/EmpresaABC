@@ -1,23 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="df27f59f-1721-4407-9067-da7b4e1d1bd3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/components/delete.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/components/loading.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/components/more.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/pagination.blade.php" afterDir="false" />
+    <list default="true" id="df27f59f-1721-4407-9067-da7b4e1d1bd3" name="Default Changelist" comment="with user modal">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Clientes/Clientes.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Clientes/Clientes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/User/Delete.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Users.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Users.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/loading.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/loading.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/livewire/clientes/clientes.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/clientes/clientes.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/user/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/user/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/user/delete.blade.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/livewire/users.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/users.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/vendor/jetstream/components/authentication-card.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendor/jetstream/components/authentication-card.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/vendor/jetstream/components/button.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendor/jetstream/components/button.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/vendor/jetstream/components/dropdown.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendor/jetstream/components/dropdown.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,7 +163,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/components" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../si2/si2_web" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -236,8 +228,23 @@
       <workItem from="1610023718062" duration="1692000" />
       <workItem from="1610034118468" duration="1800000" />
       <workItem from="1610048581589" duration="13180000" />
-      <workItem from="1610119665315" duration="5229000" />
+      <workItem from="1610119665315" duration="16129000" />
+      <workItem from="1610190981823" duration="637000" />
+      <workItem from="1610204755040" duration="1330000" />
+      <workItem from="1610218070630" duration="9221000" />
+      <workItem from="1610294165590" duration="5048000" />
+      <workItem from="1610322534592" duration="19000" />
+      <workItem from="1610325482449" duration="2134000" />
+      <workItem from="1610330261807" duration="545000" />
     </task>
+    <task id="LOCAL-00001" summary="with user modal">
+      <created>1610127389757</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1610127389757</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -254,6 +261,10 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="with user modal" />
+    <option name="LAST_COMMIT_MESSAGE" value="with user modal" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
