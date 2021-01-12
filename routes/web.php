@@ -27,13 +27,13 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
     Route::get('/createuser',\App\Http\Livewire\User\Create::class)->name('createuser');
 
     Route::get('/users',\App\Http\Livewire\Users::class)->name('users');
-    Route::get('/users/more',\App\Http\Livewire\Users::class)->name('users.more');
+    Route::get('/users/more/{id}',\App\Http\Livewire\User\More::class)->name('users.more');
 
     Route::get('/tasks',\App\Http\Livewire\Tasks\Tasks::class)->name('tasks');
-    Route::get('/tasks/more',\App\Http\Livewire\Tasks\Tasks::class)->name('tasks.more');
+    Route::get('/tasks/more/{id}',\App\Http\Livewire\Tasks\More::class)->name('tasks.more');
 
     Route::get('/clientes',\App\Http\Livewire\Clientes\Clientes::class)->name('clientes');
-    Route::get('/clientes/more',\App\Http\Livewire\Clientes\Clientes::class)->name('clientes.more');
+    Route::get('/clientes/more/{id}',\App\Http\Livewire\Clientes\More::class)->name('clientes.more');
 
 });
 

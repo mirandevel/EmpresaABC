@@ -160,10 +160,10 @@
                                 </x-slot>
 
                                 <x-slot name="content">
-                                    <button wire:click="$emit('modalMore',{{$user}})"
-                                        class="block w-full py-2 text-sm text-gray-800 hover:bg-gray-400">
+                                    <a href="{{route('users.more',['id' => $user->id])}}"
+                                        class="block w-full py-2 text-sm text-gray-800 hover:bg-gray-400 text-center">
                                         Ver más
-                                    </button>
+                                    </a>
                                     <button wire:click="$emit('modalUpdate',{{$user}})"
                                         class="block w-full py-2 text-sm text-gray-800 hover:bg-gray-400">
                                         {{$user->active?'Deshabilitar':'Habilitar'}}
