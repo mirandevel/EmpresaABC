@@ -22,4 +22,6 @@ Route::post('/login',[\App\Http\Controllers\AuthController::class,'login']);
 Route::middleware(['auth:sanctum', 'verified'])->post('/logout',[\App\Http\Controllers\AuthController::class,'logout']);
 
 //tasks
-Route::middleware(['auth:sanctum', 'verified'])->get('/tasks',[\App\Http\Controllers\TaskController::class,'tasks']);
+Route::middleware(['auth:sanctum', 'verified'])->get('/tasksByUser',[\App\Http\Controllers\TaskController::class,'tasksByUser']);
+Route::middleware(['auth:sanctum', 'verified'])->post('/beginTask',[\App\Http\Controllers\TaskController::class,'beginTask']);
+Route::middleware(['auth:sanctum', 'verified'])->post('/fcmToken',[\App\Http\Controllers\NotificationController::class,'registerTokenFCM']);
