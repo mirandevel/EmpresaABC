@@ -18,7 +18,12 @@ class More extends Component
     ];
     public function mount($id){
        $this->user=User::find($id);
-       $this->tareas=Tarea::where('tec_id',$this->user->id)->get();
+       if ($this->user->type!='a'){
+           $this->tareas=Tarea::where('tec_id',$this->user->id)->get();
+       }else{
+           $this->tareas=Tarea::where('adm_id',$this->user->id)->get();
+       }
+
        $this->asistencias=Asistencia::where('tec_id',$this->user->id)->get();
 
     }

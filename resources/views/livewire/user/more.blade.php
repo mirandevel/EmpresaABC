@@ -40,15 +40,17 @@
             <button
                 class="bg-white inline-block border-l border-t border-r rounded-t py-2 px-4 text-blue-700 font-semibold border-blue-200
 border-transparent focus:outline-none focus:ring-2 focus:border-blue-600 focus:border-transparent"
-            >Tareas encomendadas
+            >{{$user->type=='a'?'Tareas creadas':'Tareas encomendadas'}}
             </button>
         </li>
+        @if($user->type!='a')
         <li @click="openTab = 2" class="-mb-px">
             <button
                 class="bg-white inline-block {{$tab==2?'border-l border-t border-r':''}} rounded-t py-2 px-4 text-blue-700 font-semibold"
             >Asistencias
             </button>
         </li>
+        @endif
     </ul>
     <div x-show="openTab === 1">
         <div class="grid grid-cols-3 gap-4">
@@ -105,7 +107,6 @@ border-transparent focus:outline-none focus:ring-2 focus:border-blue-600 focus:b
     <div x-show="openTab === 2">
         <div class="grid grid-cols-3 gap-4">
             @for ($i = 0; $i < 10; $i++)
-                @forelse($asistencias as $asistencia)
                     <a
                         class="group  hover:bg-white hover:shadow-lg hover:border-transparent border border-blue-300 shadow rounded-md p-4 max-w-sm mx-auto bg-white my-5">
                         <div class="flex">
@@ -113,20 +114,13 @@ border-transparent focus:outline-none focus:ring-2 focus:border-blue-600 focus:b
                             <div class="flex-row ">
                                 <div>
 
-                                    <div class="text-lg font-bold">{{$asistencia->fecha}}
-                                        <span
-                                            class=" px-3 py-1 font-semibold text-white text-sm  leading-tight bg-blue-500  rounded-full">
-                                        {{$asistencia->estado?'En curso':'Finalizada'}}
-                                    </span>
+                                    <div class="text-lg font-bold">2021/01/03
                                     </div>
-                                    <p class="text-sm">Inicio: {{$asistencia->hora_inicio}}</p>
-                                    <p class="text-sm">Finalizado: {{$asistencia->hora_fin}}</p>
+                                    <p class="text-sm">Inicio: 08:00:00</p>
+                                    <p class="text-sm">Finalizado: 16:15:00</p>
                                 </div>
                                 <div class="mt-3">
-                                    <p class="text-sm">{{$asistencia->descripcion}}</p>
-                                </div>
-                                <div class="mt-3">
-                                    <button onclick="window.location='{{ url($asistencia->ubicacion) }}'"
+                                    <button onclick="window.location='map'"
                                         class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded rounded-2xl inline-flex items-center">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                              viewBox="0 0 24 24"
@@ -141,9 +135,7 @@ border-transparent focus:outline-none focus:ring-2 focus:border-blue-600 focus:b
                             </div>
                         </div>
                     </a>
-                @empty
-                    <div class="text-lg font-bold">No tiene asistencias</div>
-                @endforelse
+
             @endfor
         </div>
 

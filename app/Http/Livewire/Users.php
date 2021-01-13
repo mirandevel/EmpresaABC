@@ -13,7 +13,7 @@ class Users extends Component
 
     public $searchName='';
     public $type='';
-    public $paginator=1;
+    public $paginator=5;
 
     public $currentName;
     public $currentId;

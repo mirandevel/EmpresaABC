@@ -20,4 +20,17 @@ class Tarea extends Model
         'tec_id',
         'cli_id',
     ];
+
+    public function technical()
+    {
+        return $this->belongsTo(User::class,'tec_id','id');
+    }
+    public function administrator()
+    {
+        return $this->belongsTo(User::class,'adm_id','id');
+    }
+    public function client()
+    {
+        return $this->belongsTo(Cliente::class,'cli_id');
+    }
 }

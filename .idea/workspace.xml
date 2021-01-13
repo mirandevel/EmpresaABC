@@ -1,18 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="df27f59f-1721-4407-9067-da7b4e1d1bd3" name="Default Changelist" comment="with api">
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Clientes/More.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Tasks/More.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/User/More.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Asistencia.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Permiso.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/clientes/more.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/tasks/more.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/livewire/user/more.blade.php" afterDir="false" />
+    <list default="true" id="df27f59f-1721-4407-9067-da7b4e1d1bd3" name="Default Changelist" comment="with cards">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/tasks/tasks.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/tasks/tasks.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/users.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/users.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Tasks/More.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Tasks/More.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/User/More.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/User/More.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Users.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Users.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Tarea.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Tarea.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/tasks/more.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/tasks/more.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/user/more.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/user/more.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -247,7 +243,9 @@
       <workItem from="1610401724799" duration="7214000" />
       <workItem from="1610418507225" duration="4400000" />
       <workItem from="1610455588642" duration="1207000" />
-      <workItem from="1610465050261" duration="11635000" />
+      <workItem from="1610465050261" duration="12040000" />
+      <workItem from="1610501100706" duration="3988000" />
+      <workItem from="1610540694391" duration="6935000" />
     </task>
     <task id="LOCAL-00001" summary="with user modal">
       <created>1610127389757</created>
@@ -277,7 +275,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610466352179</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="with cards">
+      <created>1610479095989</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1610479095989</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -299,7 +304,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="with user modal" />
     <MESSAGE value="with api" />
-    <option name="LAST_COMMIT_MESSAGE" value="with api" />
+    <MESSAGE value="with cards" />
+    <option name="LAST_COMMIT_MESSAGE" value="with cards" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

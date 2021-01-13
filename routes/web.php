@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Tarea;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -31,6 +32,13 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
 
     Route::get('/tasks',\App\Http\Livewire\Tasks\Tasks::class)->name('tasks');
     Route::get('/tasks/more/{id}',\App\Http\Livewire\Tasks\More::class)->name('tasks.more');
+  /*  Route::get('/tasks/more/{id}',function ($id){
+        $tarea=Tarea::find($id);
+        $tarea->load('technicial');
+        $tarea->load('administrator');
+        $tarea->load('client');
+        return $tarea;
+    })->name('tasks.more');*/
 
     Route::get('/clientes',\App\Http\Livewire\Clientes\Clientes::class)->name('clientes');
     Route::get('/clientes/more/{id}',\App\Http\Livewire\Clientes\More::class)->name('clientes.more');
