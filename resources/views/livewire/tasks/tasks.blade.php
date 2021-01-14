@@ -64,11 +64,10 @@
             </div>
         </div>
     </div>
-    <div class="grid grid-cols-3 gap-4">
-        @for ($i = 0; $i < 10; $i++)
+    <div class="grid grid-cols-3 gap-4 px-15 ">
             @foreach($tareas as $tarea)
                 <div
-                    class="group  hover:bg-white hover:shadow-lg hover:border-transparent border border-blue-300 shadow rounded-md p-4 max-w-sm mx-auto bg-white my-5">
+                    class="group  hover:bg-white hover:shadow-lg hover:border-transparent border border-blue-300 shadow rounded-md p-4 w-full bg-white my-5">
                     <div class="flex">
 
                         <a  href="{{route('tasks.more',['id'=>$tarea->id])}}"
@@ -101,13 +100,15 @@
                                 </x-slot>
 
                                 <x-slot name="content">
-                                    <button class="block w-full py-2 text-sm text-gray-800 hover:bg-gray-400">
+                                    <a href="{{route('tasks.more',['id'=>$tarea->id])}}"
+                                        class="text-center block w-full py-2 text-sm text-gray-800 hover:bg-gray-400">
                                         Ver más
-                                    </button>
-                                    <button class="block w-full py-2 text-sm text-gray-800 hover:bg-gray-400">
+                                    </a>
+                                    <a href="{{route('tasks.update',['id'=>$tarea->id])}}"
+                                        class="text-center block w-full py-2 text-sm text-gray-800 hover:bg-gray-400">
                                         Actualizar
-                                    </button>
-                                    <button
+                                    </a>
+                                    <button wire:click="$emit('modalDelete',{{$tarea->id}})"
                                         class="block w-full py-2 text-sm text-gray-800 hover:bg-gray-400">
                                         Elimninar
                                     </button>
@@ -118,7 +119,6 @@
                     </div>
                 </div>
     @endforeach
-    @endfor
 </div>
 
 <div class="-mx-4 sm:-mx-8 px-4 sm:px-8 pb-20 overflow-x-auto">
@@ -214,6 +214,10 @@
 
 
     </div>
+    <x-delete-task wire:model="showDelete" type="Tarea"
+               wire:submit.prevent="deleteTask">
+
+    </x-delete-task>
 </div>
 
 </div>

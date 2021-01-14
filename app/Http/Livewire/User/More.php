@@ -29,7 +29,7 @@ class More extends Component
     }
     public function render()
     {
-        return view('livewire.user.more')->layout('layouts.app');
+        return view('livewire.user.more')->layout('layouts.app',['header'=>'Más detalles del usuario']);
     }
     public function showTab($number){
         $this->tab=$number;

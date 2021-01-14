@@ -20,7 +20,7 @@ class CreatePermisosTable extends Migration
 
             $table->unsignedBigInteger('tec_id');
             $table->unsignedBigInteger('asistencia_id');
-
+            $table->timestamps();
             $table->foreign('tec_id')->references('id')->on('users')->cascadeOnDelete();
             $table->foreign('asistencia_id')->references('id')->on('asistencias')->cascadeOnDelete();
 

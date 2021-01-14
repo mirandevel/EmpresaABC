@@ -1,8 +1,3 @@
-<x-slot name="header">
-    <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-        Usuarios
-    </h2>
-</x-slot>
 
 
 <div class="border border-blue-300 shadow rounded-md p-4 max-w-sm mx-auto bg-white my-5">
@@ -53,11 +48,10 @@ border-transparent focus:outline-none focus:ring-2 focus:border-blue-600 focus:b
         @endif
     </ul>
     <div x-show="openTab === 1">
-        <div class="grid grid-cols-3 gap-4">
-            @for ($i = 0; $i < 10; $i++)
+        <div class="grid grid-cols-3 gap-4 px-5">
                 @forelse($tareas as $tarea)
                     <div
-                       class="group  hover:bg-white hover:shadow-lg hover:border-transparent border border-blue-300 shadow rounded-md p-4 max-w-sm mx-auto bg-white my-5">
+                       class="group  hover:bg-white hover:shadow-lg hover:border-transparent border border-blue-300 shadow rounded-md p-4 w-full mx-auto bg-white my-5">
                         <a href="{{route('tasks.more',['id'=>$tarea->id])}}"
                             class="flex-row">
 
@@ -97,7 +91,6 @@ border-transparent focus:outline-none focus:ring-2 focus:border-blue-600 focus:b
                 @empty
                     <div class="text-lg font-bold">No se le signo ninguna tarea</div>
                 @endforelse
-            @endfor
         </div>
 
     </div>

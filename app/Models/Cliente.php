@@ -15,4 +15,8 @@ class Cliente extends Model
         'telefono',
         'correo',
     ];
+    public function tasks()
+    {
+        return $this->hasMany(Tarea::class,'cli_id','id');
+    }
 }

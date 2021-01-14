@@ -92,33 +92,33 @@
         <div class="inline-block min-w-full mt-3 border-2 border-gray-300 rounded-2xl">
             <table class="min-w-full leading-normal mt-2">
                 <thead>
-                <tr>
+                <tr class="text-center">
                     <th
-                        class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                        class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100  text-xs font-semibold text-gray-600 uppercase tracking-wider">
                         Nombre
                     </th>
                     <th
-                        class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                        class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100  text-xs font-semibold text-gray-600 uppercase tracking-wider">
                         Tipo
                     </th>
                     <th
-                        class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                        class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-xs font-semibold text-gray-600 uppercase tracking-wider">
                         Inicio
                     </th>
                     <th
-                        class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                        class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100  text-xs font-semibold text-gray-600 uppercase tracking-wider">
                         Estado
                     </th>
                     <th
-                        class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                        class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100  text-xs font-semibold text-gray-600 uppercase tracking-wider">
                         Acción
                     </th>
                 </tr>
                 </thead>
                 <tbody>
                 @foreach($users as $user)
-                    <tr>
-                        <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                    <tr class="text-center">
+                        <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm flex justify-center">
                             <div class="flex items-center">
                                 <div class="flex-shrink-0 w-10 h-10">
                                     <img class="w-full h-full rounded-full"
@@ -164,6 +164,7 @@
                                         class="block w-full py-2 text-sm text-gray-800 hover:bg-gray-400 text-center">
                                         Ver más
                                     </a>
+                                    @if($user->id!=\Illuminate\Support\Facades\Auth::user()->id)
                                     <button wire:click="$emit('modalUpdate',{{$user}})"
                                         class="block w-full py-2 text-sm text-gray-800 hover:bg-gray-400">
                                         {{$user->active?'Deshabilitar':'Habilitar'}}
@@ -172,6 +173,7 @@
                                             class="block w-full py-2 text-sm text-gray-800 hover:bg-gray-400">
                                         Elimninar
                                     </button>
+                                    @endif
                                     {{--@click="$dispatch('modal-delete',{nameUser:'{{$user->name}}',user:'{{$user}}'})--}}
                                 </x-slot>
                             </x-jet-dropdown>

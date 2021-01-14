@@ -2,6 +2,7 @@
 
 namespace App\Http\Livewire\Tasks;
 
+use App\Models\FCMToken;
 use App\Models\Tarea;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
@@ -50,7 +51,49 @@ public $minuto;
             'tec_id' => $this->tec_id,
             'cli_id' => $this->cli_id,
         ]);
+        $this->prepareNotification($this->tec_id,$this->descripcion);
         $this->redirect('tasks');
 
+    }
+
+    public function prepareNotification($id,$description){
+        $to = FCMToken::where('tec_id',$id)->get();
+        foreach ($to as $token){
+            $to=$token->token;
+            $notification = array(
+                'title' => "Nueva tarea",
+                'body' => $description
+            );
+            $notification = array('to' => $to, 'notification' => $notification);
+            $this->sendNotification($notification);
+        }
+
+    }
+    public function sendNotification($notification)
+    {
+//$to = "/topics/tournaments";
+
+
+
+        //$this->sendNotif($to, $notification);
+        //$feilds = array('registration_ids' => $to, 'notification' => $notification);
+
+        $ch = curl_init();
+
+        curl_setopt($ch, CURLOPT_URL, 'https://fcm.googleapis.com/fcm/send');
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+        curl_setopt($ch, CURLOPT_POST, 1);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($notification));
+
+        $headers = array();
+        $headers[] = 'Authorization: Key= AAAArftN5sM:APA91bFU6mz0iJLn39SVjtxZEpGwqSE9FjzTB4xKba15I_Ija7YqT1xNTWUauM1zI0xpQfGsnI3hSt-1B8KzDzm5AwRJO_YhH-CogjtT_GDuHUC0KgNmVKXuJ5NnkVeUjjPSJS5Fm1jj';
+        $headers[] = 'Content-Type: application/json';
+        curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+
+        $result = curl_exec($ch);
+        if (curl_errno($ch)) {
+            echo 'Error:' . curl_error($ch);
+        }
+        curl_close($ch);
     }
 }

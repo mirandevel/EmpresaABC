@@ -13,6 +13,7 @@ class More extends Component
         $this->tarea->load('technical');
         $this->tarea->load('administrator');
         $this->tarea->load('client');
+        $this->tarea->load('task_assitance');
     }
     public function render()
     {

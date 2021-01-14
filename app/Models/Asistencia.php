@@ -10,12 +10,12 @@ class Asistencia extends Model
     use HasFactory;
 
     protected $table = 'asistencias';
-    public $timestamps=false;
+
     protected $fillable = [
         'hora_inicio',
         'hora_fin',
         'fecha',
         'ubicacion',
-        'tec_id'
+        'tec_id',
     ];
 }

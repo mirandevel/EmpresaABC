@@ -26,22 +26,23 @@ class Create extends Component
     }
 
     public function submit(){
-        $this->validate();
+            $this->validate();
 
-        // Execution doesn't reach here if validation fails.
-  /*  $cliente=new Cliente();
-    $cliente->nombre=$this->nombre;
-    $cliente->direccion=$this->direccion;
-    $cliente->telefono=$this->telefono;
-    $cliente->correo=$this->correo;
-    $cliente->save();*/
-        Cliente::create([
-            'nombre' => $this->nombre,
-            'direccion' => $this->direccion,
-            'telefono' => $this->telefono,
-            'correo' => $this->correo,
-        ]);
-        $this->redirect('clientes');
+            // Execution doesn't reach here if validation fails.
+            /*  $cliente=new Cliente();
+              $cliente->nombre=$this->nombre;
+              $cliente->direccion=$this->direccion;
+              $cliente->telefono=$this->telefono;
+              $cliente->correo=$this->correo;
+              $cliente->save();*/
+            Cliente::create([
+                'nombre' => $this->nombre,
+                'direccion' => $this->direccion,
+                'telefono' => $this->telefono,
+                'correo' => $this->correo,
+            ]);
+            $this->redirect('clientes');
+
 
     }
 }

@@ -71,32 +71,32 @@
         <div class="inline-block min-w-full mt-3 border-2 border-gray-300 rounded-2xl">
             <table class="min-w-full leading-normal mt-2">
                 <thead>
-                <tr>
+                <tr class="ext-center">
                     <th
-                        class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                        class="tpx-5 py-3 border-b-2 border-gray-200 bg-gray-100  text-xs font-semibold text-gray-600 uppercase tracking-wider">
                         Nombre
                     </th>
                     <th
-                        class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                        class=" px-5 py-3 border-b-2 border-gray-200 bg-gray-100  text-xs font-semibold text-gray-600 uppercase tracking-wider">
                         Dirección
                     </th>
                     <th
-                        class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                        class=" px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-xs font-semibold text-gray-600 uppercase tracking-wider">
                         Teléfono
                     </th>
                     <th
-                        class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                        class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-xs font-semibold text-gray-600 uppercase tracking-wider">
                         Correo
                     </th>
                     <th
-                        class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                        class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-xs font-semibold text-gray-600 uppercase tracking-wider">
                         Acción
                     </th>
                 </tr>
                 </thead>
                 <tbody>
                 @foreach($clientes as $cliente)
-                    <tr>
+                    <tr class="text-center">
 
                         <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
                             <p class="text-gray-900 whitespace-no-wrap">{{$cliente->nombre}}</p>
@@ -123,14 +123,14 @@
                                 </x-slot>
 
                                 <x-slot name="content">
-                                    <button
-                                        class="block w-full py-2 text-sm text-gray-800 hover:bg-gray-400">
+                                    <a href="{{route('clientes.more',['id'=>$cliente->id])}}"
+                                        class="block w-full py-2 text-center text-sm text-gray-800 hover:bg-gray-400">
                                         Ver más
-                                    </button>
-                                    <button
-                                        class="block w-full py-2 text-sm text-gray-800 hover:bg-gray-400">
+                                    </a>
+                                    <a href="{{route('clientes.update',['id'=>$cliente->id])}}"
+                                        class="text-center block w-full py-2 text-sm text-gray-800 hover:bg-gray-400">
                                         Actualizar
-                                    </button>
+                                    </a>
                                     <button  wire:click="$emit('modalDelete',{{$cliente}})"
                                              class="block w-full py-2 text-sm text-gray-800 hover:bg-gray-400">
                                         Elimninar

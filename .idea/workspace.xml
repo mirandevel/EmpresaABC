@@ -1,14 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="df27f59f-1721-4407-9067-da7b4e1d1bd3" name="Default Changelist" comment="with cards">
+    <list default="true" id="df27f59f-1721-4407-9067-da7b4e1d1bd3" name="Default Changelist" comment="with more task">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/AssistanceController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ReportController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Clientes/Update.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Report.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/Tasks/Update.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/dompdf.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeders/AsistenciaSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeders/ClienteSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeders/TareaAsistidaSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeders/TareaSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeders/UserSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/all-users.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/delete-task.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/livewire/clientes/update.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/livewire/report.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/livewire/tasks/update.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/EmpresaABC.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/EmpresaABC.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/LoginController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TaskController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TaskController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Clientes/Create.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Clientes/Create.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Clientes/More.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Clientes/More.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Tasks/Create.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Tasks/Create.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Tasks/More.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Tasks/More.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Tasks/Tasks.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Tasks/Tasks.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Livewire/User/More.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/User/More.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Users.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Users.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Asistencia.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Asistencia.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Cliente.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Cliente.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Permiso.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Permiso.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Tarea.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Tarea.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_12_125105_create_asistencias_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_01_12_125105_create_asistencias_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_12_125414_create_permisos_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_01_12_125414_create_permisos_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/clientes/clientes.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/clientes/clientes.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/clientes/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/clientes/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/clientes/more.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/clientes/more.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/livewire/tasks/more.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/tasks/more.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/tasks/tasks.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/tasks/tasks.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/livewire/user/more.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/user/more.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/users.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/users.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/navigation-dropdown.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/navigation-dropdown.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -150,6 +188,11 @@
       <path value="$PROJECT_DIR$/vendor/livewire/livewire" />
       <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
       <path value="$PROJECT_DIR$/vendor/laraveles/spanish" />
+      <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-dompdf" />
+      <path value="$PROJECT_DIR$/vendor/dompdf/dompdf" />
+      <path value="$PROJECT_DIR$/vendor/sabberworm/php-css-parser" />
+      <path value="$PROJECT_DIR$/vendor/phenx/php-font-lib" />
+      <path value="$PROJECT_DIR$/vendor/phenx/php-svg-lib" />
     </include_path>
   </component>
   <component name="ProjectId" id="1mM5NLH0n5wacAl82hRrref8YWy" />
@@ -166,7 +209,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../si2/si2_web" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/components" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -245,7 +288,9 @@
       <workItem from="1610455588642" duration="1207000" />
       <workItem from="1610465050261" duration="12040000" />
       <workItem from="1610501100706" duration="3988000" />
-      <workItem from="1610540694391" duration="6935000" />
+      <workItem from="1610540694391" duration="20654000" />
+      <workItem from="1610580523574" duration="2945000" />
+      <workItem from="1610588605870" duration="18316000" />
     </task>
     <task id="LOCAL-00001" summary="with user modal">
       <created>1610127389757</created>
@@ -282,7 +327,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610479095989</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="with more task">
+      <created>1610551982742</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1610551982742</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -305,7 +357,8 @@
     <MESSAGE value="with user modal" />
     <MESSAGE value="with api" />
     <MESSAGE value="with cards" />
-    <option name="LAST_COMMIT_MESSAGE" value="with cards" />
+    <MESSAGE value="with more task" />
+    <option name="LAST_COMMIT_MESSAGE" value="with more task" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

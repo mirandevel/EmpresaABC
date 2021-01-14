@@ -10,7 +10,7 @@
 
             <div class="mt-4">
                 <x-jet-label for="name"  value="{{'Nombre'}}" />
-                <x-jet-input wire:model="nombre" id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autocomplete="name" />
+                <x-jet-input placeHolder="{{$cliente->nombre}}" wire:model.defer="cliente.nombre" id="name" class="block mt-1 w-full" type="text" name="name"  required autocomplete="name" />
                 @error('name')  <x-jet-label class="text-red-400 italic" value="{{ $message}}" /> @enderror
 
             </div>
@@ -19,19 +19,19 @@
 
             <div class="mt-4">
                 <x-jet-label for="direccion" value="{{ 'Dirección' }}" />
-                <x-jet-input id="direccion" wire:model.defer="direccion" class="block mt-1 w-full" type="text" name="direccion" :value="old('direccion')" required />
+                <x-jet-input id="direccion" placeHolder="{{$cliente->direccion}}" wire:model.defer="cliente.direccion" class="block mt-1 w-full" type="text" name="direccion" :value="old('direccion')" required />
                 @error('email')  <x-jet-label class="text-red-400 italic" value="{{ $message}}" /> @enderror
 
             </div>
             <div class="mt-4">
                 <x-jet-label for="email" value="{{ 'Correo' }}" />
-                <x-jet-input id="email" wire:model.defer="correo" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required />
+                <x-jet-input id="email" placeHolder="{{$cliente->correo}}" wire:model.defer="cliente.correo" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required />
                 @error('email')  <x-jet-label class="text-red-400 italic" value="{{ $message}}" /> @enderror
 
             </div>
             <div class="mt-4">
                 <x-jet-label for="phone" value="{{'Teléfono'}}" />
-                <x-jet-input id="phone" wire:model.defer="telefono" class="block mt-1 w-full" type="number" name="phone" :value="old('phone')" required />
+                <x-jet-input id="phone" placeHolder="{{$cliente->telefono}}" wire:model.defer="cliente.telefono" class="block mt-1 w-full" type="number" name="phone" :value="old('phone')" required />
                 @error('phone') <x-jet-label class="text-red-400 italic" value="{{ $message}}" />  @enderror
 
             </div>
@@ -39,9 +39,7 @@
 
         <div class="flex items-center justify-center mt-4">
             <button class="inline-flex items-center px-4 py-2 bg-gray-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 active:bg-gray-900 focus:outline-none focus:border-gray-900 focus:shadow-outline-gray disabled:opacity-25 transition ease-in-out duration-150"
-                    type="submit">{{'Crear'}}</button>
+                    type="submit">{{'Actualizar'}}</button>
         </div>
     </form>
 </x-jet-authentication-card>
-
-

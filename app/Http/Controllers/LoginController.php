@@ -22,7 +22,7 @@ class LoginController extends Controller
                     // if success login
                    // Auth::logout();
 
-                    return redirect('dashboard');
+                    return redirect('tasks');
 
                     //return redirect()->intended('/details');
                 }

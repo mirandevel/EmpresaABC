@@ -10,11 +10,20 @@ use Illuminate\Http\Request;
 class TaskController extends Controller
 {
     function allTask(Request $request){
-        return Tarea::all();
+        return Tarea::orderBy('created_at','desc')->get();
     }
     function tasksByUser(Request $request){
         $user=$request->user();
-        return Tarea::where('tec_id',$user->id)->get();
+        $tareas=Tarea::where('tec_id',$user->id)->orderBy('created_at','desc')->get();
+        foreach ($tareas as &$tarea){
+            $tarea->load('technical');
+            $tarea->load('administrator');
+            $tarea->load('client');
+            $tarea->load('task_assitance');
+        }
+
+        return $tareas;
+
     }
     function beginTask(Request $request){
         $user=$request->user();
@@ -33,10 +42,20 @@ class TaskController extends Controller
         $task=Tarea::find($request['tarea_id']);
         $finishTask=TareaAsistida::where('tec_id',$user->id)->where('tarea_id',$task->id)->first();
 
-        $task->estado=true;
+        $task->estado=0;
         $task->save();
 
         $finishTask->hora_terminada=Carbon::now('America/La_Paz')->toTimeString();
         $finishTask->save();
+
+        $task->load('technical');
+        $task->load('administrator');
+        $task->load('client');
+        $task->load('task_assitance');
+
+        return $task;
     }
+
+
+
 }

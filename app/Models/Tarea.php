@@ -33,4 +33,8 @@ class Tarea extends Model
     {
         return $this->belongsTo(Cliente::class,'cli_id');
     }
+    public function task_assitance()
+    {
+        return $this->hasOne(TareaAsistida::class);
+    }
 }

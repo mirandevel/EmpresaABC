@@ -21,6 +21,7 @@ class CreateAsistenciasTable extends Migration
             $table->string('ubicacion');
 
             $table->unsignedBigInteger('tec_id');
+            $table->timestamps();
 
             $table->foreign('tec_id')->references('id')->on('users')->cascadeOnDelete();
 
