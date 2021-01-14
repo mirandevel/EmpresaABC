@@ -2,7 +2,9 @@
 
 namespace Database\Seeders;
 
+use App\Models\Tarea;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\Auth;
 
 class TareaSeeder extends Seeder
 {
@@ -13,6 +15,6 @@ class TareaSeeder extends Seeder
      */
     public function run()
     {
-        //
+
     }
 }

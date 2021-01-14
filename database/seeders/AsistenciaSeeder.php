@@ -2,6 +2,8 @@
 
 namespace Database\Seeders;
 
+use App\Models\Asistencia;
+use Carbon\Carbon;
 use Illuminate\Database\Seeder;
 
 class AsistenciaSeeder extends Seeder
@@ -13,6 +15,6 @@ class AsistenciaSeeder extends Seeder
      */
     public function run()
     {
-        //
+
     }
 }
